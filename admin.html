@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/admin.css">
+  </head>
+  <body>
+    <h1>Evolve 2.0</h1>
+    <h2>Admin access granted !</h2>
+    <h3>Add elements to database:</h3>
+    <form action="/dbupdate" method="post">
+      <label for="company">Company : </label><input type="text" name="company" > <br><br>
+      <label for="vehicle">Vehicle : </label><input type="text" name="vehicle" > <br><br>
+      <label for="price">Price : </label><input type="number" name="price" > <br><br>
+      <label for="range">range : </label><input type="number" name="range" > <br><br>
+      <label for="speed">speed : </label><input type="number" name="speed" > <br><br>
+      <button type="submit" name="sumbit">Add</button>
+    </form>
+    <br><br>
+    <h2>Delete entries from database by giving vehicle name:</h2>
+    <form action="/dbdelete" method="post">
+      <label for="vehicle_del">Vehicle Name : </label> <input type="text" name="vehicle_del">
+      <button type="submit" name="button">Delete</button>
+    </form>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

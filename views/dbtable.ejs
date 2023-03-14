@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Db Table</title>
+    <link rel="stylesheet" href="css/dbtable1.css">
+  </head>
+  <body>
+    <h1>Evolve 2.0</h1>
+    <h2>EV vehicles as per your requirement :</h2>
+    <br>
+    <table>
+      <tr>
+        <th>Company</th>
+        <th>Vehicle</th>
+        <th>Price</th>
+        <th>Min Range in kms</th>
+        <th>Speed</th>
+      </tr>
+    <% evdb.forEach(function(item){  %>
+
+        <tr>
+          <td><%= item.company %></td>
+          <td><%= item.vehicle %></td>
+          <td><%= item.price %></td>
+          <td><%= item.range %></td>
+          <td><%= item.speed %></td>
+        </tr>
+    <%  })  %>
+    </table>
+  </body>
+  </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evolve</title>
+    <link rel="stylesheet" href="css\index.css">
+  </head>
+  <body>
+    <h1>Evolve 2.0</h1>
+
+    <h2>Please select your requirements: </h2>
+    <form class="ev" action="/data" method="post">
+
+    <label for="company">Company :</label>
+    <select name="company" id="company">
+    <option value="Ola">Ola</option>
+    <option value="Ather">Ather</option>
+    <option value="TVS">TVS</option>
+    <option value="any">Any</option>
+    </select>
+    <br>
+    <label for="price">price range</label>
+    <select name="price" id="price">
+    <option value="50"> <50k </option>
+    <option value="75"> <75k</option>
+    <option value="100"> <100k</option>
+    <option value="125"> <125k</option>
+    <option value="126"> >125k </option>
+    <option value="any"> any </option>
+    </select>
+    <br>
+    <label for="range">Min range in kms</label>
+    <select name="range" id="range">
+    <option value="50"> >50kms </option>
+    <option value="75"> >75kms</option>
+    <option value="100"> >100kms </option>
+    <option value="150"> >150kms </option>
+    <option value="175"> >175kms</option>
+    <option value="any"> any </option>
+    </select>
+    <br>
+    <label for="speed">Top Speed:</label>
+    <select name="speed" id="speed">
+    <option value="40"> >40kmph </option>
+    <option value="80"> >80kmph </option>
+    <option value="120"> >120kmph </option>
+    <option value="160"> >160kmph </option>
+    <option value="any"> any </option>
+    </select>
+    <br>
+    <button type="submit" name="ev" value="ev" >Search</button>
+    <button type="submit" name="showall" value="showall">Show All</button>
+  </form>
+  <form class="admin" action="/authentication" method="post">
+    <button type="submit" name="authentication">Admin Access</button>
+  </form>
+  <footer>
+<div class="container">
+  <div class="social-icons">
+    <a href="https://in.linkedin.com/in/sammed-jain-663572203"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/sammedcjain"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/sammysammed/"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/sammysammed"><i class="fab fa-twitter"></i></a>
+  </div>
+  <p>@sammysammed</p>
+</div>
+</footer>
+<script src="https://kit.fontawesome.com/1465e7da9e.js" crossorigin="anonymous"></script>
+  </body>
+</html>
